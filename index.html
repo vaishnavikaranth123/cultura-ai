@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Cultura AI</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+
+        CULTURA
+        <span>AI</span>
+
+    </div>
+
+
+    <nav>
+
+        <a href="#discover">
+            Discover
+        </a>
+
+        <a href="#creator">
+            Creator Studio
+        </a>
+
+        <a href="#story">
+            Stories
+        </a>
+
+        <a href="#immersive">
+            Experiences
+        </a>
+
+        <a href="#research">
+            Preserve
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <p class="eyebrow">
+            HUMAN CREATIVITY · CULTURE · TECHNOLOGY
+        </p>
+
+
+        <h1>
+
+            Technology should
+            <span>amplify humanity.</span>
+
+        </h1>
+
+
+        <p>
+
+            Discover artists, musicians, writers and
+            traditional creators. Preserve their stories,
+            extend their reach and transform their work
+            into accessible and immersive experiences.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="#discover"
+                class="primary-button"
+            >
+                Discover Creators
+            </a>
+
+
+            <a
+                href="#creator"
+                class="secondary-button"
+            >
+                Become a Creator
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-panel">
+
+        <div class="hero-symbol">
+            ✦
+        </div>
+
+        <p>
+            CREATE · PRESERVE · DISCOVER · EXPERIENCE
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<main>
+
+
+<!-- ==================================================
+     DISCOVER
+================================================== -->
+
+<section
+    id="discover"
+    class="section"
+>
+
+    <div class="section-title">
+
+        <div>
+
+            <p class="eyebrow">
+                01 / DISCOVER
+            </p>
+
+            <h2>
+                Discover creators
+            </h2>
+
+        </div>
+
+
+        <p>
+
+            Give independent creators a digital
+            space to reach new audiences.
+
+        </p>
+
+    </div>
+
+
+    <div
+        id="creatorGrid"
+        class="creator-grid"
+    ></div>
+
+
+    <div class="works-title">
+
+        <p class="eyebrow">
+            CREATIVE WORKS
+        </p>
+
+        <h2>
+            From the community
+        </h2>
+
+    </div>
+
+
+    <div
+        id="worksGrid"
+        class="works-grid"
+    ></div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CREATOR STUDIO
+================================================== -->
+
+<section
+    id="creator"
+    class="section"
+>
+
+    <div class="section-title">
+
+        <div>
+
+            <p class="eyebrow">
+                02 / CREATE
+            </p>
+
+            <h2>
+                Creator Studio
+            </h2>
+
+        </div>
+
+
+        <p>
+
+            The creator remains the author.
+            AI only helps organize, translate,
+            explain and extend the work.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-grid">
+
+
+        <div class="form-card">
+
+            <h3>
+                Create your profile
+            </h3>
+
+
+            <input
+                id="creatorName"
+                placeholder="Creator name"
+            >
+
+
+            <select id="creatorType">
+
+                <option>
+                    Artist
+                </option>
+
+                <option>
+                    Musician
+                </option>
+
+                <option>
+                    Writer
+                </option>
+
+                <option>
+                    Traditional Artist
+                </option>
+
+                <option>
+                    Craftsperson
+                </option>
+
+            </select>
+
+
+            <input
+                id="creatorRegion"
+                placeholder="Region"
+            >
+
+
+            <input
+                id="creatorLanguage"
+                placeholder="Language"
+                value="English"
+            >
+
+
+            <input
+                id="creatorTradition"
+                placeholder="Tradition / Art form"
+            >
+
+
+            <textarea
+                id="creatorBio"
+                placeholder="Tell people about yourself..."
+            ></textarea>
+
+
+            <input
+                id="creatorSocial"
+                placeholder="Website or social link"
+            >
+
+
+            <button
+                id="createCreatorBtn"
+                class="primary-button"
+            >
+
+                Create Creator Profile
+
+            </button>
+
+
+            <div
+                id="creatorStatus"
+                class="status"
+            ></div>
+
+        </div>
+
+
+
+        <div class="form-card">
+
+            <h3>
+                Publish your work
+            </h3>
+
+
+            <input
+                id="workCreatorId"
+                type="number"
+                placeholder="Creator ID"
+            >
+
+
+            <input
+                id="workTitle"
+                placeholder="Work title"
+            >
+
+
+            <select id="workCategory">
+
+                <option>
+                    Art
+                </option>
+
+                <option>
+                    Music
+                </option>
+
+                <option>
+                    Writing
+                </option>
+
+                <option>
+                    Folk Art
+                </option>
+
+                <option>
+                    Craft
+                </option>
+
+            </select>
+
+
+            <textarea
+                id="creatorDescription"
+                placeholder="Describe your work in your own words..."
+            ></textarea>
+
+
+            <textarea
+                id="culturalContext"
+                placeholder="Share the cultural or personal context behind your work..."
+            ></textarea>
+
+
+            <input
+                id="workTags"
+                placeholder="Tags separated by commas"
+            >
+
+
+            <input
+                id="workImage"
+                type="file"
+                accept="image/png,image/jpeg,image/webp"
+            >
+
+
+            <button
+                id="publishWorkBtn"
+                class="primary-button"
+            >
+
+                Publish Work
+
+            </button>
+
+
+            <div
+                id="workStatus"
+                class="status"
+            ></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     AI STORY
+================================================== -->
+
+<section
+    id="story"
+    class="section"
+>
+
+    <div class="section-title">
+
+        <div>
+
+            <p class="eyebrow">
+                03 / STORY
+            </p>
+
+            <h2>
+                Amplify the creator's story
+            </h2>
+
+        </div>
+
+
+        <p>
+            Turn creator-provided information into
+            engaging public storytelling.
+        </p>
+
+    </div>
+
+
+    <div class="ai-form">
+
+        <input
+            id="storyCreator"
+            placeholder="Creator name"
+        >
+
+
+        <input
+            id="storyWork"
+            placeholder="Work title"
+        >
+
+
+        <select id="storyLanguage">
+
+            <option>
+                English
+            </option>
+
+            <option>
+                Hindi
+            </option>
+
+            <option>
+                Kannada
+            </option>
+
+            <option>
+                Tamil
+            </option>
+
+            <option>
+                Telugu
+            </option>
+
+            <option>
+                Malayalam
+            </option>
+
+        </select>
+
+
+        <textarea
+            id="storyDescription"
+            placeholder="Creator's description..."
+        ></textarea>
+
+
+        <textarea
+            id="storyContext"
+            placeholder="Cultural context..."
+        ></textarea>
+
+
+        <button
+            id="generateStoryBtn"
+            class="primary-button"
+        >
+
+            Generate Creator Story
+
+        </button>
+
+    </div>
+
+
+    <article
+        id="storyResult"
+        class="result-box"
+    >
+
+        Your creator story will appear here.
+
+    </article>
+
+
+    <div class="listen-row">
+
+        <button
+            id="storyListen"
+            class="secondary-button"
+            disabled
+        >
+
+            🔊 Listen
+
+        </button>
+
+
+        <button
+            id="storyStop"
+            class="secondary-button"
+        >
+
+            ■ Stop
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     ACCESSIBILITY
+================================================== -->
+
+<section
+    id="accessibility"
+    class="section"
+>
+
+    <div class="section-title">
+
+        <div>
+
+            <p class="eyebrow">
+                04 / ACCESS
+            </p>
+
+            <h2>
+                Make creativity accessible
+            </h2>
+
+        </div>
+
+
+        <p>
+
+            Generate descriptions that help people
+            experience visual works without seeing them.
+
+        </p>
+
+    </div>
+
+
+    <textarea
+        id="accessContent"
+        placeholder="Paste creator/work information..."
+    ></textarea>
+
+
+    <div class="controls">
+
+        <select id="accessLanguage">
+
+            <option>
+                English
+            </option>
+
+            <option>
+                Hindi
+            </option>
+
+            <option>
+                Kannada
+            </option>
+
+            <option>
+                Tamil
+            </option>
+
+            <option>
+                Telugu
+            </option>
+
+            <option>
+                Malayalam
+            </option>
+
+        </select>
+
+
+        <button
+            id="accessBtn"
+            class="primary-button"
+        >
+
+            Generate Accessibility Description
+
+        </button>
+
+    </div>
+
+
+    <div
+        id="accessResult"
+        class="result-box"
+    ></div>
+
+
+    <button
+        id="accessListen"
+        class="secondary-button"
+        disabled
+    >
+
+        🔊 Listen
+
+    </button>
+
+</section>
+
+
+
+<!-- ==================================================
+     IMMERSIVE
+================================================== -->
+
+<section
+    id="immersive"
+    class="section"
+>
+
+    <div class="section-title">
+
+        <div>
+
+            <p class="eyebrow">
+                05 / EXPERIENCE
+            </p>
+
+            <h2>
+                Turn creativity into experiences
+            </h2>
+
+        </div>
+
+
+        <p>
+
+            Design AR, VR and educational game concepts
+            around the creator's actual work.
+
+        </p>
+
+    </div>
+
+
+    <div class="experience-options">
+
+
+        <button
+            class="experience-card active"
+            data-type="AR"
+        >
+
+            <strong>
+                AR
+            </strong>
+
+            <span>
+                Augmented reality
+            </span>
+
+        </button>
+
+
+        <button
+            class="experience-card"
+            data-type="VR"
+        >
+
+            <strong>
+                VR
+            </strong>
+
+            <span>
+                Virtual reality
+            </span>
+
+        </button>
+
+
+        <button
+            class="experience-card"
+            data-type="GAME"
+        >
+
+            <strong>
+                GAME
+            </strong>
+
+            <span>
+                Educational game
+            </span>
+
+        </button>
+
+    </div>
+
+
+    <div class="ai-form">
+
+        <input
+            id="immersiveCreator"
+            placeholder="Creator name"
+        >
+
+
+        <input
+            id="immersiveWork"
+            placeholder="Work title"
+        >
+
+
+        <textarea
+            id="immersiveDescription"
+            placeholder="Creator's work description..."
+        ></textarea>
+
+
+        <textarea
+            id="immersiveContext"
+            placeholder="Cultural context..."
+        ></textarea>
+
+
+        <button
+            id="immersiveBtn"
+            class="primary-button"
+        >
+
+            Generate Experience Concept
+
+        </button>
+
+    </div>
+
+
+    <article
+        id="immersiveResult"
+        class="result-box"
+    ></article>
+
+</section>
+
+
+
+<!-- ==================================================
+     RESEARCH
+================================================== -->
+
+<section
+    id="research"
+    class="section"
+>
+
+    <div class="section-title">
+
+        <div>
+
+            <p class="eyebrow">
+                06 / PRESERVE
+            </p>
+
+            <h2>
+                Preserve culture for the future
+            </h2>
+
+        </div>
+
+
+        <p>
+
+            Build research and preservation plans
+            around living creators and communities.
+
+        </p>
+
+    </div>
+
+
+    <div class="ai-form">
+
+        <input
+            id="researchCreator"
+            placeholder="Creator name"
+        >
+
+
+        <input
+            id="researchWork"
+            placeholder="Work title"
+        >
+
+
+        <textarea
+            id="researchDescription"
+            placeholder="Creator description..."
+        ></textarea>
+
+
+        <textarea
+            id="researchContext"
+            placeholder="Cultural context..."
+        ></textarea>
+
+
+        <button
+            id="researchBtn"
+            class="primary-button"
+        >
+
+            Generate Preservation Plan
+
+        </button>
+
+    </div>
+
+
+    <article
+        id="researchResult"
+        class="result-box"
+    ></article>
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+    <div>
+
+        <strong>
+            CULTURA AI
+        </strong>
+
+        <p>
+            Human creativity · culture · community
+        </p>
+
+    </div>
+
+
+    <p>
+        AI assists the creator. The creator remains
+        at the center of the work and its story.
+    </p>
+
+</footer>
+
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
